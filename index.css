@@ -1,0 +1,241 @@
+.button_home {
+    margin-left: 1120px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 4px 8px;
+    background-color: rgb(56, 91, 189);
+    color: white;
+    border: 1px solid #8fd1fd;
+    border-radius: 6px;
+
+}
+
+.button_home:hover {
+    background-color: #ffffff;
+    color: rgb(52, 147, 255);
+}
+
+.button_home a {
+    text-decoration: none;
+    color: #6bbef5;
+}
+
+/*天气盒子*/
+.button {
+    margin-left: 35px;
+    margin-top: 25px;
+    padding: 4px 8px;
+    background-color: rgb(56, 91, 189);
+    color: white;
+    border: 1px solid #8fd1fd;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: rgb(52, 147, 255);
+}
+
+.button a {
+    text-decoration: none;
+    color: #6bbef5;
+}
+
+
+.wb {
+    float: left;
+}
+
+/*左边*/
+.wb_left {
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(27, 51, 101);
+    border-radius: 10px;
+}
+
+.cityname {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: cornflowerblue
+}
+
+.citydate {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+.temp {
+    font-size: 90px;
+    margin-left: 20px;
+    color: rgb(106, 158, 255);
+    text-align: left;
+}
+
+.describe {
+    text-align: center;
+    color: rgb(128, 162, 235);
+
+}
+
+.tip_ {
+    float: left;
+    margin-left: 10px;
+
+}
+.tips {
+    margin-left: 10px;
+    margin-top: 14px;
+    font-size: 16px;
+    color: rgb(100, 171, 237);
+
+    
+
+}
+
+/*右边*/
+.wb_right {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 600px;
+    height: 350px;
+    background-color: rgb(27, 51, 101);
+    border-radius: 10px;
+
+}
+
+.wb_right li {
+    list-style: none;
+    float: left;
+    width: 84.395px;
+    height: 350px;
+    text-align: center;
+    border-right: 1px solid #3a4e75;
+    
+
+}
+
+.daytime1 {
+    padding-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.weather {
+    height: 100px;
+    color: rgb(128, 162, 235);
+
+}
+
+.weather_ {
+    padding-top: 0px;
+    font-size: 16px;
+    
+
+}
+
+
+.clear {
+    clear: both;
+}
+.day1,.day2,.day3,.day4,.day5,.day6,.day7 {
+    font-size: 5px;
+    color: rgb(106, 158, 255);
+    margin-top: 30px;
+
+}
+p {
+    color: rgb(106, 158, 255);
+
+}
+
+
+/*生活指数*/
+
+
+.living {
+    margin-top: 100px;
+    height: 500px;
+}
+
+h3 {
+    color: rgb(106, 158, 255);
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+
+
+.button2 {
+    margin-left: 35px;
+    margin-top: 25px;
+    padding: 4px 8px;
+    background-color: rgb(56, 91, 189);
+    color: white;
+    border: 1px solid #8fd1fd;
+    border-radius: 6px;
+}
+
+.button2:hover {
+    background-color: #ffffff;
+    color: rgb(52, 147, 255);
+}
+
+.button2 a {
+    text-decoration: none;
+    color: #6bbef5;
+}
+
+.lv {
+    background-color: rgb(27, 51, 101);
+    margin-left: 100px;
+    margin-right: 120px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.content {
+    margin-left: 25px;
+    height: 320px;
+    width: 950px;
+    background-color: #143c70;
+    color: rgb(106, 158, 255);
+}
+
+.content ul li {
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 208px;
+    height: 154px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+.zy {
+    float: left;
+}
+
+.lifeitem_0 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.item_right {
+    margin-top: 40px;
+    width: 100px;
+    line-height: 50px;
+    font-size: larger;
+}
+

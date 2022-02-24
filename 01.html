@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="commen.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="abab.js"></script>
+
+
+</head>
+
+<body>
+    <!--header 头模块 start-->
+    <!--小图文-->
+    <div class="header " id="home">
+        <div class="header_0" style="width: 60px; height: 60px; margin-left: 30px; margin-top: 35px;">
+            <img src="/图片/气象-天气预报.png" height="60px" width="60px ">
+        </div>
+        <div class="header_text1 header_0 " style="vertical-align:text-top;"> weather forcast</div>
+        <!--搜索框-->
+        <div class="header_0 search">
+            <input type="search" name="" class="enter" id="city" placeholder="请输入要查询天气的城市">
+            <button id="weather-search" class="sou" onclick="sousuo()"></button>
+        </div>
+
+
+        <!--导航栏 start-->
+        <div class="header_0 nav">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#living">生活指数</a></li>
+                <li><a href="#picture">眼保健操</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--导航栏 end-->
+    <!--header 头模块 end-->
+
+    <!--weather box 天气盒子 start-->
+
+    <div class="wb_0">
+        <div><button class="button"><a href="#home">Home</a></button></div>
+        <!--左边-->
+        <div class="wb wb_left">
+            <div class="city+date">
+                <div class="cityname" id="city_name">城市</div>
+                <div class="citydate" id="citydate">时间</div>
+            </div>
+            <div class="summary">
+                <div class="temp" id="temp">温度</div>
+                <div class="describe" id="des0">晴</div>
+                <div>
+                    <img src="/图片/tips_addfavorite_sel (1).png" alt="" class="tip_" height="20px" width="20px">
+                    <span class="tips tip_" id="daily_tip"></span>
+                </div>
+
+            </div>
+        </div>
+        <!--右边-->
+        <div class="wb wb_right">
+            <ui>
+                <li class="item first">
+                    <p class="day1" id="day1" style="color: rgb(106, 158, 255)">今天</p>
+                    <div class="daytime1">
+                        <p class="weather" id="des1"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w1"></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day2" id="day2" style="color: rgb(106, 158, 255)">明天</p>
+                    <div class="daytime1">
+                        <p class="weather" id="des2"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w2"></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day3" id="day3" style="color: rgb(106, 158, 255)">后天</p>
+                    <div class=" daytime1">
+                        <p class="weather" id="des3"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w3"></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day4" id="day4" style="color: rgb(106, 158, 255)">日期</p>
+                    <div class=" daytime1">
+                        <p class="weather " id="des4"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w4"></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day5" id="day5" style="color: rgb(106, 158, 255)">日期</p>
+                    <div class="daytime1 ">
+                        <p class="weather" id="des5"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w5"></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <p class="day6" id="day6" style="color: rgb(106, 158, 255)">日期</p>
+                    <div class="daytime1">
+                        <p class="weather" id="des6"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w6"></p>
+                    </div>
+                </li>
+                <li class="item last" style="border: 0px;">
+                    <p class="day7" id="day7" style="color: rgb(106, 158, 255);">日期</p>
+                    <div class="daytime1">
+                        <p class="weather" id="des7"></p>
+                        <img src="#" alt="">
+                    </div>
+                    <div>
+                        <p class="weather_" id="w7"></p>
+                    </div>
+
+                </li>
+            </ui>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!--weather box 天气盒子 end-->
+
+    <!--living 生活指数 start-->
+
+
+
+    <div class="living" id="living">
+        <div><button class="button2" id="living-search"><a href="#living">Living</a></button></div>
+        <div class="lv">
+            <h3>生活指数</h3>
+            <div class="content">
+                <ul>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class=" life_img" src="/图片/湿度.png" alt="">
+                            <p class="lifeitem_0">湿度</p>
+                        </div>
+                        <div class="zy item_right" id="shidu">30</div>
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class="life_img" src="/图片/空气质量 (1).png" alt="">
+                            <p class="lifeitem_0">空气</p>
+                        </div>
+                        <div class="zy item_right" id="kongqi">好</div>
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img src="/图片/紫外线指数.png" alt="" class="life_img">
+                            <p class="lifeitem_0">紫外线</p>
+                        </div>
+                        <div class="zy item_right" id="ziwai"></div>
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class="life_img" src="/图片/风力.png" alt="">
+                            <p class="lifeitem_0">风向</p>
+                        </div>
+                        <div class="zy item_right" id="fengxiang">2</div>
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class="life_img" src="/图片/生活指数-穿衣.png" alt="">
+                            <p class="lifeitem_0">穿衣</p>
+                        </div>
+                        <div class="zy item_right" id="yifu">羽绒</div>
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img src="/图片/生活指数-运动.png" alt="" class="life_img">
+                            <p class="lifeitem_0">户外</p>
+                        </div>
+                        <div class="zy item_right" id="huwai"></div>
+
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class="life_img" src="/图片/生活指数-感冒.png" alt="">
+                            <p class="lifeitem_0">感冒</p>
+                        </div>
+                        <div class="zy item_right" id="ganmao">易</div>
+
+                    </li>
+                    <li class="lifeitem">
+                        <div class="zy item_left">
+                            <img class="life_img" src="/图片/钓鱼.png" alt="">
+                            <p class="lifeitem_0">钓鱼</p>
+                        </div>
+                        <div class="zy item_right" id="yu">适合</div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div><button class="button_home"><a href="#home">Home</a></button></div>
+    <button id="fasong" style="visibility: hidden;"></button>
+
+    <!--living 生活指数 end-->
+
+    <!--picture 眼保健操 start-->
+    <div class="picture" id="picture">
+        <div><button class="button2"><a href="#picture">Picture</a></button></div>
+        <div><button class="button_home"><a href="#home">Home</a></button></div>
+
+    </div>
+    <!--picture 眼保健操 end-->
+
+</body>
+
+</html>
